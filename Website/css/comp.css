@@ -1,0 +1,14 @@
+/* include style for buttons, input, heading */
+
+button, submit {
+    
+    background-color: rgb(54, 173, 173);
+    border-radius:3px;
+    border: 1px;
+    padding: 7px 13px;
+    cursor: pointer;
+}
+input {
+    height: 2.5em;
+    border-radius: 3px;
+}
