@@ -1,5 +1,40 @@
 /* include mobile friendly */
 /* include layout - float right, footer, nav */
+
 * {
     font-family: sans-serif;
+    margin: 0;
+}
+#wrap-centered {
+    width: 100%;
+    margin: 0 auto;
+}
+nav {
+    width: 100%;
+    overflow: auto;
+    background-color: #090909;
+    margin-bottom: 3px;
+}
+nav ul {
+    margin: 15px;
+    list-style-type: none;
+    float: right;
+    
+}
+nav li {
+    padding: 0 15px;
+    display: inline;
+
+}
+nav li a{
+    text-decoration: unset;
+    color: green;
+}
+nav li a:hover{
+    text-decoration: unset;
+    color: lime;
+}
+nav #logo{
+    max-height: 3em;
+    width: auto;
 }

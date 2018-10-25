@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/comp.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/comp.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/layout.css" />
     <script src="main.js"></script>
 </head>
 <body>
@@ -25,5 +25,9 @@
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veritatis eum quidem neque optio fuga culpa vero aspernatur dicta dolore necessitatibus sequi, vel provident dolor. Eum tempora deleniti quasi exercitationem.</p>
 
+    <script function addStyle(){
+        document.getElementById('style').href='css/layout.css';
+    }
+    <script>
 </body>
 </html>
