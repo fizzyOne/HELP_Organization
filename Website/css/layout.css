@@ -1,3 +1,5 @@
 /* include mobile friendly */
 /* include layout - float right, footer, nav */
-font
+* {
+    font-family: sans-serif;
+}

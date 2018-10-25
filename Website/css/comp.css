@@ -2,13 +2,21 @@
 
 button, submit {
     
-    background-color: rgb(54, 173, 173);
-    border-radius:3px;
+    background-color: #0097a7;
+    color: white;
+    font-weight: bold;
+    border-radius:2px;
     border: 1px;
-    padding: 7px 13px;
+    padding: 9px 17px;
     cursor: pointer;
 }
+button:hover, submit:hover{
+    transition: 0.5s;
+    background-color: #006064;
+}
 input {
-    height: 2.5em;
+    padding: 5px;
     border-radius: 3px;
+    font-size: 16px;
+    border: 1px #0097a7 solid;
 }
