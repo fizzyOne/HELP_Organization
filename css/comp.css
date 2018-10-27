@@ -6,7 +6,7 @@ button, submit {
     color: white;
     font-weight: bold;
     border-radius:2px;
-    border: 1px;
+    border: 1px solid;
     padding: 9px 17px;
     cursor: pointer;
 }

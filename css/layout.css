@@ -17,19 +17,20 @@ nav {
     /* margin-bottom: 3px; */
 }
 
-nav ul {
-    float: left;
+nav ul, nav .navbar {
+    display: block;
+    /* float: left; */
     /* margin: 15px; */
     list-style-type: none;
 
-    padding: 15px 15px;
+    padding: 15px 5px;
     /* float: right; */
     
 }
 nav li {
     display: inline;
-    /* margin: 15px 15px; */\
-    padding: 15px 15px;
+    /* margin: 15px 15px; */
+    padding: 15px 5px;
 }
 
 nav li a{
@@ -61,21 +62,40 @@ nav #menu_small{
     display: none;
     cursor: pointer;
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:768px){
     nav #logo{
         display:none;
     }
     nav #menu_small{
-        display:inline-block;
+        display:block;
 
     }
-    nav ul li {
+    nav ul li{
         display: block;
-    }
-    nav ul{
-        display: none;
+        padding:15px;
+        padding-right: 5px;
+        margin: 0 auto;
         
     }
-    
+    nav .navbar{
+        padding: 0;
+        display: none;
+    }
+    nav .mob {
+        padding: 0;
+        display: block;
+    }
+    nav .mob {
+        padding: 0;
+        display: block;
+    }
+    nav .mob li{
+        padding:0;
+    }
+    nav .mob a{
+        float: none;
+        display: block;
+        padding:15px;
+    }
 }
 
