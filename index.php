@@ -4,16 +4,29 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>HELP Org</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/comp.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/layout.css" />
     <script src="main.js"></script>
+    <style>
+        body{
+            background: url("/img/banner.jpg") no-repeat fixed;
+        }
+
+        </style>
+
 </head>
 <body>
     <?php include("common/nav.php");?>
-        <submit>Submit2</submit>
 
+    <div class="banner">
+        sfdsfdsf
+        
+    </div>    
+    <div style="opacity:0; height:70px">
+    </div>
+        <submit>Submit2</submit>
     <button>Submit</button>
     <input type="text">
     <input type="radio">something</input>

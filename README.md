@@ -1,1 +1,6 @@
 # HELP_Organization
+
+## What is this??
+This website is made as a part of the assignment given in B.I.T.
+Do not reuse or edit or claim to own this, as this is a very hard work of mine...
+Have a nice day...

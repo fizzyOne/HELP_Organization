@@ -20,3 +20,9 @@ input {
     font-size: 16px;
     border: 1px #0097a7 solid;
 }
+.banner{
+    background: lightgrey url('../img/banner.jpg') no-repeat ;
+
+    background-size: 100%;
+    min-height: 85vh;
+}

@@ -1,6 +1,6 @@
 <?php
     switch ($_SERVER["SCRIPT_NAME"]) {
-        case "index.html":
+        case "index.php":
             $CURRENT_PAGE = "Home";
             $PAGE_TITLE = "This is Home";
             break;
