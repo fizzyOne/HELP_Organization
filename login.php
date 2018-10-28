@@ -11,28 +11,44 @@
         h2{
             text-align: center;
         }
+        
        .bg{
-            /* height: 80vh; */
-            background: url('img/banner.jpg') no-repeat center center;
+           padding: 15px;
+            /* overflow: visible; */
+            min-height: 70vh;
+            background: url('img/banner.jpg') no-repeat center ;
+            background-size: cover;
             /* background-size: 100%; */
        }
        form{
-           
-           margin-top: 50px;
-           width: 50vw;
-           height: 50%;
+           /* margin-top: 50px; */
+           width: 30vw;
            /* float: right; */
            box-shadow: 0 0 5px black;
-           margin: 20vh auto;
-           background: rgba(255,255,255,0.4);
+           /* float: right; */
+           margin: auto;
+           /* position: absolute;
+           top:40%;
+           left: 50%;
+           transform: translate(-50%,-50%); */
+           background: rgba(255,255,255,0.6);
+       }
+       @media only screen and (max-width:768px){
+           form{
+               width: 80vw;
+           }
        }
        
        form *{
-           
            display: block;
-           padding: 5px 0;
+           padding: 7px 0;
            width: 100%;
            
+       }
+       form input,form button{
+           
+        min-height:2.5rem;
+           padding: 5px;
        }
     </style>
 
@@ -41,7 +57,7 @@
 <body>
     <?php include_once("common/nav.php");?>
 
-    <div class="banner bg">
+    <div class="bg">
 
         <form action="">
             <h2>Login</h2>

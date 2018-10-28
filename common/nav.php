@@ -14,6 +14,7 @@
 	  <li class="nav-item">
 	    <a class="nav-link" href="contact.php">Contact</a>
 	  </li>
+		<li><button onclick="location.href='login.php'">Login</button></li>
 	</ul>
 	<script>
 function shownav(){
