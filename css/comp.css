@@ -6,13 +6,23 @@ button, submit {
     color: white;
     font-weight: bold;
     border-radius:2px;
-    border: 1px solid;
+    border: 2px;
     padding: 9px 17px;
     cursor: pointer;
 }
 button:hover, submit:hover{
     transition: 0.5s;
     background-color: #006064;
+}
+.dbg{
+    background-color: transparent;
+    border: 3px #0097a7 solid ;
+    /* color:#0097a7; */
+}
+.dbg:hover{
+    background-color: #0097a7;
+
+    /* color:white; */
 }
 input {
     padding: 5px;
@@ -21,8 +31,33 @@ input {
     border: 1px #0097a7 solid;
 }
 .banner{
-    background: lightgrey url('../img/banner.jpg') no-repeat ;
+    height: 100vh;
+    background-size: 100vw auto;
+}
+.bgfixed{
+    background: lightgrey no-repeat center center fixed;
+}
 
-    background-size: 100%;
-    min-height: 85vh;
+.banner .snap{
+    background: rgba(255,255,255,0.3);
+    height: 80%;
+    width: 40%;
+    margin: auto;
+}
+.topban{
+    background: url('../img/banner.jpg') no-repeat center center;
+}
+
+form{
+    padding: 9px;
+}
+@media only screen and (max-width: 768px){
+    .banner{
+        background-size:auto 100vh ;
+    }
+    .banner .snap{
+        height: 50%;
+        width: 80%;
+        margin: auto;
+    }
 }

@@ -2,45 +2,61 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>HELP Org</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/comp.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/layout.css" />
-    <script src="main.js"></script>
     <style>
-        body{
-            background: url("/img/banner.jpg") no-repeat fixed;
+        .centerbtn{
+            margin: 0 auto;
         }
-
-        </style>
+    </style>
 
 </head>
 <body>
-    <?php include("common/nav.php");?>
+    <?php include_once("common/nav.php");?>
+
+    <div class="banner topban">
+        <div class="snap">
+            <h1>HELP</h1>
+            <p>Help Organization helps charity workers to find ways to help people.</p>
+            <button onclick="location.href='signup.html'" type="button">Join Help Community</button>
+        </div>
+        
+    </div>
+    <hr>
+    <div class="banner bgfixed">
+
+    <h2>
+    Posts
+    </h2>
+
+
+    </div>
 
     <div class="banner">
-        sfdsfdsf
-        
-    </div>    
-    <div style="opacity:0; height:70px">
+
+    <h2>
+    Help People
+    </h2>
+
+
     </div>
-        <submit>Submit2</submit>
-    <button>Submit</button>
-    <input type="text">
-    <input type="radio">something</input>
 
-    <h1>Heading</h1>
-    <h2>Heading</h2>
-    <h3>Heading</h3>
-    <h4>Heading</h4>
+    <div class="banner">
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veritatis eum quidem neque optio fuga culpa vero aspernatur dicta dolore necessitatibus sequi, vel provident dolor. Eum tempora deleniti quasi exercitationem.</p>
+    <h2>
+    Tasks
+    </h2>
 
-    <script function addStyle(){
+
+    </div>
+
+    <button onclick="location.href='signup.html'" type="button" class="centerbtn">Join Us & Help</button>
+
+    <?php include_once("common/footer.php");?>
+    <!-- <script function addStyle(){
         document.getElementById('style').href='css/layout.css';
-    }
-    <script>
+    }<script> -->
 </body>
 </html>
