@@ -17,8 +17,9 @@
            padding: 15px;
             /* overflow: visible; */
             min-height: 70vh;
-            background: url('img/banner.jpg') no-repeat center ;
-            background-size: cover;
+            /* background: url('img/banner.jpg') no-repeat center ; */
+            background: url('fav.jpg') no-repeat center ;
+            /* background-size: cover; */
             /* background-size: 100%; */
        }
 

@@ -9,8 +9,14 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./css/layout.css" />
     <style>
         body{
-            background: url("img/banner.jpg") no-repeat center center;
-            background-size: cover;
+            /* background: url("img/banner.jpg") center center; */
+            
+            
+            /* background-size: cover; */
+        }
+        h1{
+            color: black;
+            text-align: center;
         }
     </style>
 

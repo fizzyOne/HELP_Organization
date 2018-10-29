@@ -1,5 +1,4 @@
 /* include style for buttons, input, heading */
-
 button, submit {
     
     background-color: #0097a7;
@@ -46,6 +45,7 @@ input {
 }
 .topban{
     background: url('../img/banner.jpg') no-repeat center center;
+    background-size: cover;
 }
 
 form{
@@ -77,10 +77,10 @@ form input,form button{
      padding: 5px;
      margin-bottom: 5px;
 }
-.feed {
-    background: linear-gradient(white, lightgrey);
+.feed, .partners {
+    background: rgb(238, 238, 238);
     /* background-color: white; */
-    border: 2px grey solid;
+    /* border: 2px grey solid; */
     border-radius: 2px;
     width: 50%;
     margin: 5px auto;
@@ -96,6 +96,7 @@ form input,form button{
     font-size: 0.9em;
     text-align: right;
 }
+
 @media only screen and (max-width: 768px){
     .banner{
         background-size:auto 100vh ;

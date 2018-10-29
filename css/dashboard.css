@@ -1,0 +1,7 @@
+aside{
+    /* float: left; */
+    width: 30%;
+    display: block;
+    background-color:grey;
+    overflow: auto;
+}

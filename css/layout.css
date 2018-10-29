@@ -1,9 +1,14 @@
 /* include mobile friendly */
 /* include layout - float right, footer, nav */
-
+html{
+    height:auto;
+    min-height: 100%;
+}
 body {
     font-family: sans-serif;
     margin: 0;
+    height: auto;
+    min-height: 100%;
 }
 
 #wrap-centered {
