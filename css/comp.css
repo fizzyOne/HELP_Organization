@@ -51,6 +51,51 @@ input {
 form{
     padding: 15px;
 }
+form{
+    /* margin-top: 50px; */
+    width: 30vw;
+    /* float: right; */
+    box-shadow: 0 0 5px black;
+    /* float: right; */
+    margin: auto;
+    /* position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    background: rgba(255,255,255,0.6);
+}
+
+form *{
+    display: block;
+    padding: 7px 0;
+    width: 100%;
+    
+}
+form input,form button{
+    
+     min-height:2.5rem;
+     padding: 5px;
+     margin-bottom: 5px;
+}
+.feed {
+    background: linear-gradient(white, lightgrey);
+    /* background-color: white; */
+    border: 2px grey solid;
+    border-radius: 2px;
+    width: 50%;
+    margin: 5px auto;
+    padding:15px;
+}
+.feed img{
+    display:block;
+    margin: 0 auto;
+    width:60%;
+    height:auto;
+}
+.feed .date{
+    font-size: 0.9em;
+    text-align: right;
+}
 @media only screen and (max-width: 768px){
     .banner{
         background-size:auto 100vh ;
@@ -59,5 +104,11 @@ form{
         height: 50%;
         width: 80%;
         margin: auto;
+    }
+    form{
+        width: 80vw;
+    }
+    .feed {
+        width: 70%;
     }
 }

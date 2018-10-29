@@ -9,10 +9,10 @@
 	    <a class="nav-link" href="index.php">Home</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="about.php">About Us</a>
+	    <a class="nav-link" href="updates.php">Feed</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="contact.php">Contact</a>
+	    <a class="nav-link" href="partners.php">Collaborators</a>
 	  </li>
 		<li><button onclick="location.href='login.php'">Login</button></li>
 	</ul>

@@ -78,7 +78,7 @@
                 <button>Login</button>
             </div>
             
-            <a  style="text-align: center;" href="signup.html">Not a member yet? Sign Up</a>
+            <a  style="text-align: center;" href="signup.php">Not a member yet? Sign Up</a>
         </form>
 
     </div>

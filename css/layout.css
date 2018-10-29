@@ -70,8 +70,9 @@ nav #menu_small {
     display: none;
     cursor: pointer;
 }
-nav li:last-child {
+nav button {
     float: right;
+    transform: translate(-5px,-20%);
 }
 @media only screen and (max-width:768px) {
     nav #logo {

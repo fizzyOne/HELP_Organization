@@ -20,7 +20,7 @@
         <div class="snap">
             <h1>HELP</h1>
             <p>Help Organization helps charity workers to find ways to help people.</p>
-            <button onclick="location.href='signup.html'" type="button">Join Help Community</button>
+            <button onclick="location.href='signup.php'" type="button">Join Help Community</button>
         </div>
         
     </div>
