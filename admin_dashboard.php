@@ -16,8 +16,9 @@
 <body>
     <?php include_once("common/nav.php");?>
 
-    <div>
+    <div id="content">
         <aside>
+          <img src="fav.jpg" alt="logo" width='72px'>
             <div>
                 <h3>Tasks</h3>
                 <ul>
@@ -33,16 +34,17 @@
                 </ul>
             </div>
         </aside>
-        <div>
-            <table style="height:80vh;">
+
+        <section id="main">
+            <table>
             <td>adfds</td>
             <tr>adslfkjlaksdf</tr>
-            
+
             </table>
-        </div>
+        </section>
     </div>
 
-    <?php include_once("common/footer.php");?>
+    <!-- <?php include_once("common/footer.php");?> -->
     <!-- <script function addStyle(){
         document.getElementById('style').href='css/layout.css';
     }<script> -->

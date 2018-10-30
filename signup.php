@@ -45,7 +45,7 @@
             </div>
             <div>
                 <label>Location: </label>
-                <input type="">
+                <?php require_once("common/country_select.php"); ?>
             </div>
 
 

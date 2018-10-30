@@ -84,9 +84,10 @@
                     <!-- first, list continents in combobox, then country name -->
                     <input type="password">
                 </div>
-                <div>
-                    <label name="alert" hidden="hidden">...</label>
-                </div>
+                 <div class="alert">
+                  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                  This is an alert box.
+                </div> 
                 <button>Login</button>
             </div>
             

@@ -1,7 +1,30 @@
 aside{
-    /* float: left; */
-    width: 30%;
-    display: block;
+    float: left;
+    min-width:15em;
+    min-height: 100%;
+    overflow: hidden;
+    /* min-height:68vh; */
+    /* display: block;
+    overflow: auto; */
+    /* height:100%; */
     background-color:grey;
-    overflow: auto;
+}
+#content{
+  box-sizing: border-box;
+  height: 93%;
+  overflow: hidden;
+}
+#main{
+  height: 100%;
+  background-color: lightgrey;
+  padding:9px;
+  overflow: scroll;
+  /* float:right; */
+}
+footer{
+  clear: both;
+  position: absolute;
+  bottom:0;
+  right:0;
+  left:0;
 }
