@@ -20,8 +20,8 @@
             position:relative;
             min-height: 80%;
             height:auto;
-            background: url('fav.jpg') no-repeat center ;
-            /* background-size: cover; */
+            background: url('img/helpLogo.png') no-repeat center ;
+            background-size: contain;
             /* background-size: 100%; */
        }
        form{
@@ -48,15 +48,15 @@
                width: 80vw;
            }
        }
-       
+
        form *{
            display: block;
            padding: 7px 0;
            width: 100%;
-           
+
        }
        form input,form button{
-           
+
         min-height:2.5rem;
            padding: 5px;
        }
@@ -87,10 +87,10 @@
                  <div class="alert">
                   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
                   This is an alert box.
-                </div> 
+                </div>
                 <button>Login</button>
             </div>
-            
+
             <a  style="text-align: center;" href="signup.php">Not a member yet? Sign Up</a>
         </form>
 

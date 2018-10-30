@@ -7,9 +7,13 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./css/comp.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/layout.css" />
     <style>
+        h2{
+          margin:0;
+        }
         .centerbtn{
             margin: 0 auto;
         }
+
     </style>
 
 </head>
@@ -22,10 +26,10 @@
             <p>Help Organization helps charity workers to find ways to help people.</p>
             <button onclick="location.href='signup.php'" type="button">Join Help Community</button>
         </div>
-        
+
     </div>
     <hr>
-    <div class="banner bgfixed">
+    <div class="banner bgfixed" style="background: url('img/post.jpeg') no-repeat center left; background-size:contain;">
 
     <h2>
     Posts
@@ -34,7 +38,7 @@
 
     </div>
 
-    <div class="banner">
+    <div class="banner" style="background: url('img/orgs.png') no-repeat center; background-size:contain;">
 
     <h2>
     Help People
@@ -43,7 +47,7 @@
 
     </div>
 
-    <div class="banner">
+    <div class="banner" style="background: url('img/tasks.svg') no-repeat center left; background-size:contain;">
 
     <h2>
     Tasks

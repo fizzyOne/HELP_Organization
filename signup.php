@@ -12,14 +12,14 @@
             text-align: center;
             margin: 0;
         }
-        
+
        .bg{
            padding: 15px;
             /* overflow: visible; */
             min-height: 70vh;
             /* background: url('img/banner.jpg') no-repeat center ; */
-            background: url('fav.jpg') no-repeat center ;
-            /* background-size: cover; */
+            background: url('img/helpLogo.png') no-repeat center ;
+            background-size: contain;
             /* background-size: 100%; */
        }
 
@@ -57,7 +57,7 @@
             <button id="register">Request Membership</button>
             <a href="login.php">Already a member? - Login</a>
         </form>
-       
+
     </div>
 
     <?php include_once("common/footer.php");?>

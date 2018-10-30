@@ -1,6 +1,6 @@
 /* include style for buttons, input, heading */
 button, submit {
-    
+
     background-color: #0097a7;
     color: white;
     font-weight: bold;
@@ -30,6 +30,7 @@ input {
     border: 1px #0097a7 solid;
 }
 .banner{
+  overflow: auto;
     height: 100vh;
     background-size: cover;
 }
@@ -44,7 +45,7 @@ input {
     margin: auto;
 }
 .topban{
-    background: url('../img/banner.jpg') no-repeat center center;
+    background: url('../img/helpinghand.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -69,10 +70,10 @@ form *{
     display: block;
     padding: 7px 0;
     width: 100%;
-    
+
 }
 form input,form button{
-    
+
      min-height:2.5rem;
      padding: 5px;
      margin-bottom: 5px;
