@@ -1,4 +1,6 @@
 <?php
+
+
     switch ($_SERVER["SCRIPT_NAME"]) {
         case "index.php":
             $CURRENT_PAGE = "Home";
@@ -8,3 +10,4 @@
             $CURRENT_PAGE = "INDEX";
             $PAGE_TITLE = "WELCOME";
     }
+?>
