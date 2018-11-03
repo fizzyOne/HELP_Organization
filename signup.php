@@ -32,16 +32,16 @@
 
     <div class="bg">
 
-        <form action="">
+        <form action="upload_req.php" method="POST">
             <h2>Join HELP community</h2>
             <div>
                 <label>Organization Name: </label>
-                <input type="text">
+                <input type="text" name="orgName" required>
             </div>
 
             <div>
                 <label>Email: </label>
-                <input type="mail" name="">
+                <input type="mail" name="email" required>
             </div>
             <div>
                 <label>Location: </label>
@@ -51,8 +51,16 @@
 
             <div>
                 <label>Website</label>
-                <input type="text">
+                <input type="text" name="website">
             </div>
+
+
+              <?php if(isset($_SESSION['err'])):?>
+               <div class="alert">
+                 <span class="closebtn" onclick="this.parentElement.style.display='none';"> &times; </span>
+                <?php echo $_SESSION['err']; unset($_SESSION['err']);?>
+              </div>
+              <?php endif; ?>
 
             <button id="register">Request Membership</button>
             <a href="login.php">Already a member? - Login</a>

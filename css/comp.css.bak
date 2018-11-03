@@ -1,5 +1,5 @@
 /* include style for buttons, input, heading */
-button, input[type=submit] {
+button, submit {
 
     background-color: #0097a7;
     color: white;
@@ -97,22 +97,7 @@ form input,form button{
     font-size: 0.9em;
     text-align: right;
 }
-.alert{
-  box-sizing: border-box;
-  padding: 9px 5px;
-  margin-bottom: 5px;
-  background-color: red;
-  color: white;
-}
-.alert .closebtn{
-  display: inline !important;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 0 5px;
-}
-.alert .closebtn:hover{
-  color: black;
-}
+
 @media only screen and (max-width: 768px){
     .banner{
         background-size:auto 100vh ;

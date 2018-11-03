@@ -1,5 +1,5 @@
 function register(){
-    alert("loooL")
+    // alert("loooL")
 }
 
 window.onload = function() {
