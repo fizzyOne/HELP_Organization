@@ -3,6 +3,7 @@
 <html>
 <head>
     <title>HELP Org - Dashboard</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/comp.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/layout.css" />
@@ -11,42 +12,98 @@
         body{
             min-height:80vh;
         }
+        table{
+          margin: 15px auto;
+          border: 1px solid black;
+          width: 80%;
+
+        }
+        th{
+          color:white;
+          background-color: #0097A7;
+        }
+        th, td {
+          text-align: left;
+          padding: 9px;
+          vertical-align:middle;
+        }
+        tr:hover{
+          background-color: #bbb;
+
+        }
+        a.acclnk{
+          color: green;
+
+        }
+        a.rejlnk{
+          color:red;
+        }
         </style>
 </head>
 <body>
     <?php include_once("common/nav.php");?>
 
+
     <div id="content">
-        <aside>
-          <img src="fav.jpg" alt="logo" width='72px'>
+        <aside id="sidemenu">
+          <img src="fav2.jpg" alt="logo" width='72px'>
             <div>
                 <h3>Tasks</h3>
                 <ul>
-                    <li>+ New Task</li>
-                    <li>0_0 View Tasks</li>
+                    <a href="addTask.php?"><li>+ New Task</li></a>
+                    <a href="admin_dashboard.php?page=viewTask"><li>* View Tasks</li></a>
                 </ul>
             </div>
             <div>
-                <h3>&Collaborators</h3>
+                <h3>Collaborators</h3>
                 <ul>
-                    <li>Requests</li>
-                    <li>View all</li>
+                    <a href="admin_dashboard.php?page=partReq"><li>+ Requests</li></a>
+                    <a href="admin_dashboard.php?page=partDen"><li>- Denied</li></a>
+                </ul>
+            </div>
+            <div>
+                <h3>Feed</h3>
+                <ul>
+                    <a href="admin_dashboard.php?page=feedReq"><li>+ Requests</li></a>
+                    <a href="admin_dashboard.php?page=feedDen"><li>- Denied</li></a>
                 </ul>
             </div>
         </aside>
 
         <section id="main">
-            <table>
-            <td>adfds</td>
-            <tr>adslfkjlaksdf</tr>
+          <div style="width=100%;display:block;">
+            <button id="logout" onclick="location.href='index.php'">Logout</button>
+          </div>
+          <div style="margin-top:3em;">
+            <?php
 
-            </table>
+            if (isset($_GET['page'])){
+              switch ($_GET['page']) {
+                  case "viewTask":
+                      $_GET['page'] = "viewTask";
+                      break;
+                  case "partReq":
+                      $_GET['page'] = "partReq";
+                      break;
+                  case "partDen":
+                      $_GET['page'] = "partDen";
+                      break;
+                  case "feedReq":
+                      $_GET['page'] = "feedReq";
+                      break;
+                  case "feedDen":
+                      $_GET['page'] = "feedDen";
+                      break;
+                  default:
+
+              }
+              include_once("common/admin_com.php");
+            }
+            ?>
+          </div>
         </section>
     </div>
 
     <!-- <?php include_once("common/footer.php");?> -->
-    <!-- <script function addStyle(){
-        document.getElementById('style').href='css/layout.css';
-    }<script> -->
 </body>
 </html>

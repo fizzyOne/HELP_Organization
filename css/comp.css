@@ -9,7 +9,7 @@ button, input[type=submit] {
     padding: 9px 17px;
     cursor: pointer;
 }
-button:hover, submit:hover{
+button:hover, input[type="submit"]:hover{
     transition: 0.5s;
     background-color: #006064;
 }
@@ -69,10 +69,11 @@ form{
 form *{
     display: block;
     padding: 7px 0;
+    margin-top: 7px;
     width: 100%;
 
 }
-form input,form button{
+form input,form button, {
 
      min-height:2.5rem;
      padding: 5px;
@@ -125,7 +126,7 @@ form input,form button{
     form{
         width: 80vw;
     }
-    .feed {
+    .feed , .partners{
         width: 70%;
     }
 }

@@ -96,6 +96,9 @@ nav button {
         margin: 0 auto;
 
     }
+    nav button{
+      margin-top: 15px;
+    }
 
     nav .navbar {
         padding: 0;

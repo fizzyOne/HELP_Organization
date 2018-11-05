@@ -3,7 +3,8 @@
 <html>
 
 <head>
-    <title>HELP Org</title>
+    <title>HELP Org - Sign up</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/comp.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/layout.css" />
@@ -50,8 +51,13 @@
 
 
             <div>
-                <label>Website</label>
+                <label>Website:</label>
                 <input type="text" name="website">
+            </div>
+
+            <div>
+                <label>Password:</label>
+                <input type="password" name="password" required>
             </div>
 
 

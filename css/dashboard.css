@@ -2,12 +2,37 @@ aside{
     float: left;
     min-width:15em;
     min-height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* min-height:68vh; */
     /* display: block;
     overflow: auto; */
     /* height:100%; */
-    background-color:grey;
+    background-color:#555;
+}
+aside h3{
+  color: lightgrey;
+}
+aside a{
+  font-size: 0.8em;
+  text-decoration: none;
+  color: white;
+}
+aside li{
+  border-radius: 5px;
+  background-color: #555;
+  display: block;
+  padding: 7px 3px;
+  margin:5px;
+}
+aside li:hover{
+  border-radius: 5px;
+  background-color: darkgrey;
+  display: block;
+  padding: 7px 3px;
+  margin:5px;
+}
+aside img{
+  margin: 3px auto;
 }
 #content{
   box-sizing: border-box;
@@ -21,6 +46,44 @@ aside{
   overflow: scroll;
   /* float:right; */
 }
+
+/* Layout: */
+
+.col-left, .col-right {
+  flex: 2;
+}
+
+/* Responsive: */
+
+@media only screen and (min-width: 768px) {
+  .layout {
+    display: flex;
+  }
+}
+
+.container {
+  margin-top:50px;
+  /* max-width: 60em; */
+  min-height: 80vh;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.col {
+  padding: 1em;
+  margin: 0 2px 2px 0;
+  background: lightgrey;
+  margin: 5px;
+}
+#logout{
+  float:right;
+  margin-right: 9px;
+  background-color:#E4210C;
+}
+#logout:hover{
+  background-color:#961507;
+}
+
 footer{
   clear: both;
   position: absolute;
