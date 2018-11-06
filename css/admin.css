@@ -1,0 +1,32 @@
+body{
+    min-height:80vh;
+}
+table{
+  margin: 15px auto;
+  border: 1px solid black;
+  width: 80%;
+
+}
+th{
+  color:white;
+  background-color: #0097A7;
+}
+th, td {
+  text-align: left;
+  padding: 9px;
+  vertical-align:middle;
+}
+tr:hover{
+  background-color: #bbb;
+
+}
+a.acclnk{
+  color: green;
+
+}
+a.rejlnk{
+  color:red;
+}
+h1{
+  text-align: center;
+}

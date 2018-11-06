@@ -1,5 +1,4 @@
-<?php include("common/#config.php");?>
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>

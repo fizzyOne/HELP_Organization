@@ -1,5 +1,6 @@
-<?php include("common/#config.php");?>
-<!DOCTYPE <!DOCTYPE html>
+<?php if (!isset($_SESSION)) {session_start();}
+if ((isset($_SESSION['userid']) || !empty($_SESSION['userid'])) && (strpos($_SESSION['userid'], 'Staff') === 0)) : ?>
+<!DOCTYPE html>
 <html>
 <head>
     <title>HELP Org - Dashboard</title>
@@ -38,11 +39,14 @@
         a.rejlnk{
           color:red;
         }
-        </style>
+        h1{
+          text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <?php include_once("common/nav.php");?>
 
+<?php include_once("common/nav.php");?>
 
     <div id="content">
         <aside id="sidemenu">
@@ -68,17 +72,17 @@
                     <a href="admin_dashboard.php?page=feedDen"><li>- Denied</li></a>
                 </ul>
             </div>
+            <section style="width=100%;display:block;">
+              <button id="logout" style="float:left !important;" onclick="location.href='common/logout.php'">Logout</button>
+            </section>
         </aside>
 
         <section id="main">
-          <div style="width=100%;display:block;">
-            <button id="logout" onclick="location.href='index.php'">Logout</button>
-          </div>
-          <div style="margin-top:3em;">
-            <?php
 
-            if (isset($_GET['page'])){
-              switch ($_GET['page']) {
+          <div>
+            <?php
+            if (isset($_GET['page'])) {
+                switch ($_GET['page']) {
                   case "viewTask":
                       $_GET['page'] = "viewTask";
                       break;
@@ -95,15 +99,17 @@
                       $_GET['page'] = "feedDen";
                       break;
                   default:
-
-              }
-              include_once("common/admin_com.php");
+                }
+            } else {
+                $_GET['page'] = "main";
             }
+              include_once("common/admin_com.php");
+
             ?>
           </div>
         </section>
     </div>
 
-    <!-- <?php include_once("common/footer.php");?> -->
 </body>
 </html>
+<?php endif;?>

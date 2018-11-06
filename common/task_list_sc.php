@@ -8,8 +8,7 @@
         echo "<div class='task_i'>";
       	echo "<h3>" . $row['title'] . "</h3>";
       	echo "<p>" . $row['detail'] . "</p>";
-      	echo "<p>" . $row['detail'] . "</p>";
-        echo "</div>";
+        echo "</div><hr>";
     }
 
   } else {

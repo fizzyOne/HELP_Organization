@@ -12,7 +12,7 @@
             min-height:80vh;
         }
         form{
-          width:100%;
+          width:80%;
           margin-top:20px;
         }
         .tasklist{
@@ -25,17 +25,19 @@
     </style>
 </head>
 <body>
-    <?php include_once("common/nav.php");?>
-    <!-- FOR TESTING ONLY -->
-    <?php session_start(); $_SESSION['userid'] = "Org001"; ?>
-    <?php echo $_SESSION['userid'];?>
+
+    <?php if(!isset($_SESSION)){session_start();}
+    if((isset($_SESSION['userid']) || !empty($_SESSION['userid'])) && (strpos($_SESSION['userid'], 'Org00') === 0)) : ?>
+
+      <?php include_once("common/nav.php");?>
+
 
     <?php
     //if(isset($_SESSION['userid']) && (substri($_SESSION['userid'], 0) == "O")):
     ?>
 
       <div style="width=100%;display:block;">
-        <button id="logout" onclick="location.href='index.php'">Logout</button>
+        <button id="logout" onclick="location.href='common/logout.php'">Logout</button>
       </div>
 
       <div class="container">
@@ -43,14 +45,15 @@
           <div class="layout">
             <div class="col col-left">
               <strong>Upload Task update:</strong>
-              <form action="" method="POST">
+
+              <form enctype="multipart/form-data" action="upload_feed.php" method="POST">
                 <label> Title: </label>
-                <input type="text" name="title">
+                <input type="text" name="title" required>
                 <label> Details: </label>
-                <input type="text" name="detail">
+                <input type="text" name="detail" required>
 
                 <label> Image upload: </label>
-                <input type="file" name="img">
+                <input type="file" name="imgUpload" accept="image/*" required>
 
                 <?php
                   require_once("common/task_list.php")
@@ -69,7 +72,6 @@
 
       </div>
 
-  <?php //endif;
-  ?>
+  <?php endif;?>
 </body>
 </html>

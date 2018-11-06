@@ -1,5 +1,4 @@
-<?php include("common/#config.php");?>
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>HELP Org - Home</title>
@@ -10,11 +9,12 @@
     <style>
         h2{
           margin:0;
-        }
-        .centerbtn{
-            margin: 0 auto;
-        }
+          color: #0097A7;
 
+        }
+        body{
+          background-color: lightgrey;
+        }
     </style>
 
 </head>
@@ -23,43 +23,59 @@
 
     <div class="banner topban">
         <div class="snap">
-            <h1>HELP</h1>
+            <br>
+            <h1 style="text-align: center;">HELP Organization</h1>
             <p>Help Organization helps charity workers to find ways to help people.</p>
-            <button onclick="location.href='signup.php'" type="button">Join Help Community</button>
+            <p>Here, we gather everyone and unite to help the needy.</p>
+            <p>Charity, Food, Fund raising events and much more.</p>
+            <button onclick="location.href='signup.php'" type="button" class="centerbtn" >Join Help Community</button>
         </div>
 
     </div>
     <hr>
-    <div class="banner bgfixed" style="background: url('img/post.jpeg') no-repeat center left; background-size:contain;">
 
+
+    <div class="banner" style="background: white url('img/orgs.png') no-repeat center; background-size:contain;margin:9px 0;padding:20px">
+<div class="snap">
     <h2>
-    Posts
+    Helping People
     </h2>
+    <p>People from around the globe can connect and help the needy from anywhere</p>
+    <p>Help organization is world wide. Collaborators are from different places.</p>
 
-
+      </div>
     </div>
 
-    <div class="banner" style="background: url('img/orgs.png') no-repeat center; background-size:contain;">
-
-    <h2>
-    Help People
-    </h2>
-
-
-    </div>
-
-    <div class="banner" style="background: url('img/tasks.svg') no-repeat center left; background-size:contain;">
-
+    <div class="banner" style="background: white url('img/tasks.png') no-repeat center; background-size:contain;margin:9px 0;padding:20px">
+<div class="snap">
     <h2>
     Tasks
     </h2>
+    <p>Each Organization or personnel will be assigned tasks</p>
+    <p>Nearest Location would be preffered</p>
 
 
+      </div>
     </div>
 
-    <button onclick="location.href='signup.html'" type="button" class="centerbtn">Join Us & Help</button>
+    <div class="banner" style="background: white url('img/post.jpeg') no-repeat center left; background-size:contain;margin:9px 0;padding:20px">
+      <div class="snap">
+        <h2>
+        Posts
+        </h2>
+        <p>Charity organizations sends updates about their tasks. Chosen ones will be published to this website.</p>
+        <button onclick="location.href='updates.php'" type="button" class="centerbtn" >View Feed</button>
 
-    <?php include_once("common/footer.php");?>
+      </div>
+    </div>
+
+    <div style="height:6em;">
+      <button onclick="location.href='signup.php'" type="button" class="centerbtn" style="font-size:1.7em;">Join Us & Help</button>
+    </div>
+
+    <br>
+
+<?php include_once("common/footer.php");?>
     <!-- <script function addStyle(){
         document.getElementById('style').href='css/layout.css';
     }<script> -->

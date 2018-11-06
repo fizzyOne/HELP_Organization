@@ -9,8 +9,8 @@
         echo "<div class='feed'>";
         echo "<h3>" . $row['title'] . "</h3>";
         // echo "<p>By:" . $row['Name'] . "</p>";
-        // if (!empty($row['image'])){echo "<img height="50px" alt="image about update">" . $row['image'] . "</img";}
-        echo "<img height='50px' alt='image about update' src='" . "data:'image/jpg';base64,'" . base64_encode($row['date']) .  ";" . "'>";
+        if (!empty($row['image'])){echo "<img height='50px' alt='image about update' src='" . $row['image'] . "'>";}
+        // echo "<img height='50px' alt='image about update' src='" . "data:'image/jpg';base64,'" . base64_encode($row['date']) .  ";" . "'>";
         echo "<p>" . $row['detail'] . "</p>";
         echo "<p class='date'>" . $row['date'] . "</p>";
         echo "</div>";

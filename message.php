@@ -1,4 +1,3 @@
-<?php include("common/#config.php");?>
 <!DOCTYPE html>
 <html>
 
@@ -39,7 +38,7 @@
 
     <div class="bg">
       <div class="msg">
-        <?php session_start();if(isset($_SESSION['msgTitle'])):?>
+        <?php if(!isset($_SESSION)){session_start();}if(isset($_SESSION['msgTitle'])):?>
          <h2><?php echo $_SESSION['msgTitle'];unset($_SESSION['msgTitle']);?></h2>
          <p><?php echo $_SESSION['msgDetail'];unset($_SESSION['msgDetail']);?></p>
 

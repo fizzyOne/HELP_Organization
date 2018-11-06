@@ -16,13 +16,13 @@
 	  </li>
 		<?php
 
-
+			if(!isset($_SESSION)){session_start();}
 			if(isset($_SESSION['userid']) || !empty($_SESSION['userid'])){
 				$uid = $_SESSION['userid'];
 				// echo $uid;
-				if(substri($uid, 0) == "S"){
+				if(strpos($uid, 'Staff') === 0){
 					echo "<li><button onclick=\"location.href='admin_dashboard.php'\">DASHBOARD</button></li>";
-				} elseif (substri($uid, 0) == "O") {
+				} elseif (strpos($uid, 'Org00') ===0) {
 					echo "<li><button onclick=\"location.href='org_dashboard.php'\">DASHBOARD</button></li>";
 				} else {
 					echo "<li><button onclick=\"location.href='login.php'\">Login</button></li>";
